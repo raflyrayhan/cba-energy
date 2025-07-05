@@ -13,7 +13,7 @@ export default function ServicePreview({ data }) {
       }}
     >
       <div className="container" style={{ maxWidth: 800, margin: "auto" }}>
-        <h2 style={{ textAlign: "center", marginBottom: 20 }}>
+        <h2 style={{ textAlign: "center", marginBottom: 20, color: "black" }}>
           Our Services
         </h2>
         <ul style={{ listStyleType: "disc", paddingLeft: 20 }}>
@@ -23,7 +23,7 @@ export default function ServicePreview({ data }) {
             </li>
           ))}
         </ul>
-        <div style={{ textAlign: "center", marginTop: 30 }}>
+        <div style={{ textAlign: "center", marginTop: 30, color: "black" }}>
           <a
             href="/services"
             style={{

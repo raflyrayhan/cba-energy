@@ -5,17 +5,19 @@ export default function Header({ data }) {
   if (!data) return null;
 
   const headerImage1 = [
-    "img/headerpic1.png"
+    "img/headerpic1.jpg"
   ];
   const headerImage2 = [
     "img/headerpic2.jpg"
+  ];
+  const headerImage3 = [
+    "img/headerpic3.jpeg"
   ];
   return (
     <header id="header">
       <div className="intro">
         <div className="overlay">
           <div className="parent">
-            {/* Teks di kiri */}
             <div className="div1">
               <div className="col-md-8 col-md-offset-2 intro-text">
                 <h2>{data?.com ?? "Loading…"}</h2>
@@ -41,7 +43,13 @@ export default function Header({ data }) {
                 src={headerImage2}
                 className="header-img"
                 alt="Header visual 2"
-                style={{ marginTop: -150, marginLeft: 100 }}
+                style={{ marginTop: -60, marginLeft: 150 }}
+              />
+              <img
+                src={headerImage3}
+                className="header-img"
+                alt="headerimg"
+                style={{ marginTop: -85, maxWidth: "100%" }}
               />
             </div>
           </div>
