@@ -5,7 +5,7 @@ export default function AboutPreview({ data }) {
   if (!data) return null;
 
   // anggap data memiliki field: data.title, data.paragraph, data.Why2 (array)
-  const { paragraph, Why2 } = data;
+  const { list, para } = data;
 
   return (
     <section
@@ -19,11 +19,11 @@ export default function AboutPreview({ data }) {
         <h2 style={{ textAlign: "center", marginTop: -30 ,marginBottom: 20, color: "black"}}>
           Who We Are
         </h2>
-        <p style={{ lineHeight: 1.6, marginBottom: 30 }}>
-          {paragraph}
+        <p style={{ lineHeight: 1.6, marginBottom: 30, textAlign: "justify", margin: "0 0 0", fontSize: "20px"}}>
+          {para}
         </p>
-        <ul style={{ listStyleType: "disc", paddingLeft: 20 }}>
-          {Why2.map((item, idx) => (
+        <ul style={{ listStyleType: "disc", paddingLeft: 20, marginTop: 40}}>
+          {list.map((item, idx) => (
             <li key={idx} style={{ marginBottom: 8 }}>
               {item}
             </li>
@@ -37,7 +37,7 @@ export default function AboutPreview({ data }) {
               padding: "10px 30px",
               backgroundColor: "#ff9800",
               color: "#fff",
-              borderRadius: 4,
+              borderRadius: 7,
               textDecoration: "none"
             }}
           >

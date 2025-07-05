@@ -25,30 +25,39 @@ export default function App() {
   }
 
   return (
-    <>
-      <Navigation />
-
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              headerData={landingPageData.Header}
-              aboutData={landingPageData.About}
-              serviceData={landingPageData.Services}
-            />
-          }
-        />
-        <Route
-          path="/about"
-          element={<AboutPage data={landingPageData.About} />}
-        />
-        <Route
-          path="/services"
-          element={<ServicesPage data={landingPageData.Services} />}
-        />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </>
+      <>
+        <Navigation />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                headerData={landingPageData.Header}
+                aboutPreviewData={landingPageData.Aboutpreview}
+                servicesPreviewData={landingPageData.Services}
+              />
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <AboutPage
+                headerData={landingPageData.Header}
+                aboutData={landingPageData.About}
+              />
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <ServicesPage
+                headerData={landingPageData.Header}
+                servicesData={landingPageData.Services}
+              />
+            }
+          />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </>
   );
 }

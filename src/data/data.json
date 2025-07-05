@@ -4,12 +4,31 @@
     "title": "Delivering Oil & Gas, Power, and Renewable Energy Projects",
     "paragraph": "From engineering design to turnkey delivery with QHSE commitment."
   },
+
+  "Aboutpreview": {
+    "para":[ 
+      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.", " ",
+
+      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.", " ",
+
+      "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
+    ],
+    "list":[
+      "ISO 9001",
+      "ISO 14001",
+      "OHSAS 18001",
+      "CSMS Certificate",
+      "SKT/SKUP Migas, CIVD SKKMigas, SBU/SIUJK large scale, NIK Importer"
+    ]
+  },
+
   "About": {
-    "paragraph":[ "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
+    "paragraph":[ 
+      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
 
-"Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
+      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
 
-"Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
+      "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
   ],
     "Why": [
       "Deep expertise in CFD and FEA engineering",

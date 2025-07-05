@@ -4,17 +4,16 @@ import Header          from "../components/header";
 import AboutPreview    from "../components/aboutpreview";
 import ServicePreview  from "../components/servicepreview";
 
-export default function Home({ headerData, aboutData, serviceData }) {
+export default function Home({
+  headerData,
+  aboutPreviewData,
+  servicesPreviewData
+}) {
   return (
     <>
-      {/* Hero */}
       <Header data={headerData} />
-
-      {/* About snippet */}
-      <AboutPreview data={aboutData} />
-
-      {/* Services snippet */}
-      <ServicePreview data={serviceData} />
+      <AboutPreview data={aboutPreviewData} />
+      <ServicePreview data={servicesPreviewData} />
     </>
   );
 }
