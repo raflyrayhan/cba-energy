@@ -1,0 +1,168 @@
+{
+  "Header": {
+    "com": "PT. Cahaya Bumi Abadi",
+    "title": "Delivering Oil & Gas, Power, and Renewable Energy Projects",
+    "paragraph": "From engineering design to turnkey delivery with QHSE commitment."
+  },
+  "About": {
+    "paragraph":[ "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
+
+"Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
+
+"Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
+  ],
+    "Why": [
+      "Deep expertise in CFD and FEA engineering",
+      "Fast and reliable simulation services",
+      "Integrated digital tools for productivity",
+      "Proven track record in industrial innovation"
+    ],
+    "Why2": [
+      
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Heat Transfer",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Fluid Flow and Particle Dispersion",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Sucker Rod Analysis",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Optimal Cooling & Stable Temperature",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Energy-Efficient Vehicle Performance Analysis",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Static Stress Analysis",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "In Service Welding Analysis",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "HSRG Improvement",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Fluid Flow",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "image": "img/cfd.png",
+      "name": "Computational Fluid Dynamics",
+      "text": "We offer CFD simulation services to analyze fluid flow, heat transfer, and aerodynamic behavior. Ideal for product development, HVAC system optimization, thermal processes, and applications in automotive, aerospace, and energy industries."
+    },
+    {
+      "image": "img/fea.png",
+      "name": "Finite Element Analysis",
+      "text": "Our FEA services help evaluate structural strength, deformation, and stress distribution. Suitable for mechanical design, aircraft components, civil structures, and any engineering part that requires durability and performance validation."
+    },
+    {
+      "image": "img/erp.png",
+      "name": "Custom-built Project ERP",
+      "text": "We develop tailored ERP platforms specifically for engineering and manufacturing projects. Our solutions integrate project management, procurement, document control, asset tracking, and real-time reporting to ensure efficiency, visibility, and digital transformation."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"This collaboration with Infimech Technology has brought new ideas that drive efficiency and innovation in our company. Truly valuable!\"",
+      "name": "Agus Sudradjat",
+      "company": "Director at PT. Rekayasa Energi Bersama"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Thank you to Infimech Team for the insights provided. We are able to implement better innovations to improve public services!\"",
+      "name": "Fajar Sulistyono",
+      "company": "Quality Control Vehicle Division at Dishub"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"The approach offered is highly relevant to the needs of the industry. We feel the real benefits in increased productivity.\"",
+      "name": "Nova Arifien",
+      "company": "Sr. Well Engineer at Pertamina Hulu Rokan"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"This cooperation with Infimech not only supports business processes but also adds value in creating sustainable solutions.\"",
+      "name": "Suryanto Zhang",
+      "company": "Project Manager at PT. Matin Perkasa"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"An extraordinary collaboration experience with Infimech, providing a new perspective that is much needed in our workplace.\"",
+      "name": "Sutomo",
+      "company": "Sr. Process Engineer at Pacific Process Engineering"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Agus Sudradjat",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Aji Candra Lestari",
+      "job": "Chief Technical Officer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Andry Ali",
+      "job": "Chief Marketing Officer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Anggriawan R. Rinukti",
+      "job": "Senior Engineer"
+    },
+    {
+      "img": "img/team/05.jpg",
+      "name": "Gilang Destya Widodo",
+      "job": "Senior Engineer"
+    },
+    {
+      "img": "img/team/06.jpg",
+      "name": "Rafly Rayhan M.",
+      "job": "Representative Engineer & IT Personnel"
+    }
+  ],
+  "Affiliator":[
+    {
+      "img": "",
+      "name": "",
+      "job": ""
+    }
+  ],
+  "Contact": {
+    "address1": "Office Malang: Jl. Mayang 08, Bunulrejo, Blimbing Kota Malang, Jawa Timur Indonesia, 65123",
+    "address2": "Office Tangerang: Office Park Karawaci Ruko Pinangsia Selatan Blok F/72 Tangerang, Banten 15138",
+    "phone": "+62 821 3084 0365",
+    "email": "info@infimech.tech",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  }
+}
