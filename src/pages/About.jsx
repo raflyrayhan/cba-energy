@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutHeader from "../components/aboutheader"; // Import the new AboutHeader
+import AboutHeader from "../components/aboutheader";
 import "./AboutPage.css";
 
 const sectionVariants = {
@@ -25,6 +25,10 @@ const listItem = {
 };
 
 export default function AboutPage() {
+
+  const isoImage = [
+    "img/iso.png"
+  ];
   return (
     <main id="about-page" style={{ background: "#fff", minHeight: "100vh" }}>
       <AboutHeader />
@@ -73,6 +77,9 @@ export default function AboutPage() {
               {text}
             </motion.li>
           ))}
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "30px 30px"}}>
+          <img src={isoImage} alt="iso" style={{maxWidth: "50%"}}/>
+          </div>
           </motion.ul>
       {/* CORE VALUE */}
       <motion.div
