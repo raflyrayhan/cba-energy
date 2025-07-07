@@ -35,6 +35,7 @@ export default function App() {
               headerData={landingPageData.Header}
               aboutPreviewData={landingPageData.Aboutpreview}
               servicesPreviewData={landingPageData.Services}
+              contactData={landingPageData.Contact}
             />
           }
         />

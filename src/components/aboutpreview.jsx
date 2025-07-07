@@ -45,7 +45,7 @@ export default function AboutPreview({ data }) {
         }}
           >
       <div className="parent">
-        <div className="div2" style={{padding: "70px 0", marginRight: "20px", marginLeft: "-20px"}}>
+        <div className="div2" style={{padding: "100px 0", marginRight: "20px", marginLeft: "-20px"}}>
           
         <h2 style={{ fontSize: "36px", fontWeight: "bold", marginBottom: "20px", textAlign: "left" }}>
           Who We Are
@@ -63,12 +63,14 @@ export default function AboutPreview({ data }) {
               padding: "10px 30px",
               backgroundColor: "#ff9800",
               color: "#fff",
-              borderRadius: 4,
+              borderRadius: 12,
               textDecoration: "none",
-              marginTop: "30px"
+              marginTop: "30px",
+              fontFamily: "sans-serif",
+              fontWeight: "520"
             }}
           >
-            Read More
+            More About Us
           </a>
           </div>
         </div>

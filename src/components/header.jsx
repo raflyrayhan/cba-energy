@@ -26,9 +26,7 @@ export default function Header({ data }) {
                   <span></span>
                 </h1>
                 <p>{data?.paragraph ?? "Loading…"}</p>
-                <a href="#about-preview" className="btn btn-custom btn-lg page-scroll">
-                  More About Us
-                </a>
+                
               </div>
             </div>
 

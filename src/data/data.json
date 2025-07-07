@@ -4,16 +4,13 @@
     "title": "Delivering Oil & Gas, Power, and Renewable Energy Projects",
     "paragraph": "From engineering design to turnkey delivery with QHSE commitment."
   },
-
   "Aboutpreview": {
-    "para":[ 
-      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.", " ",
-
-      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.", " ",
-
+    "para": [
+      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
+      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
       "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
     ],
-    "list":[
+    "list": [
       "ISO 9001",
       "ISO 14001",
       "OHSAS 18001",
@@ -21,24 +18,19 @@
       "SKT/SKUP Migas, CIVD SKKMigas, SBU/SIUJK large scale, NIK Importer"
     ]
   },
-
   "About": {
-    "paragraph":[ 
+    "paragraph": [
       "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
-
       "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
-
       "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
-  ],
+    ],
     "Why": [
       "Deep expertise in CFD and FEA engineering",
       "Fast and reliable simulation services",
       "Integrated digital tools for productivity",
       "Proven track record in industrial innovation"
     ],
-    "Why2": [
-      
-    ]
+    "Why2": []
   },
   "Gallery": [
     {
@@ -168,7 +160,7 @@
       "job": "Representative Engineer & IT Personnel"
     }
   ],
-  "Affiliator":[
+  "Affiliator": [
     {
       "img": "",
       "name": "",
@@ -176,12 +168,27 @@
     }
   ],
   "Contact": {
-    "address1": "Office Malang: Jl. Mayang 08, Bunulrejo, Blimbing Kota Malang, Jawa Timur Indonesia, 65123",
-    "address2": "Office Tangerang: Office Park Karawaci Ruko Pinangsia Selatan Blok F/72 Tangerang, Banten 15138",
-    "phone": "+62 821 3084 0365",
-    "email": "info@infimech.tech",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "comname": "PT. CAHAYA BUMI ABADI",
+    "officeAddress": {
+      "line1": "Menara Rajawali, 15th Floor",
+      "line2": "Jl. DR Ide Anak Agung Gde Agung Lot 5.1",
+      "line3": "Kawasan Mega Kuningan, Jakarta",
+      "postalCode": "Selatan 12920",
+      "country": "Indonesia",
+      "phone": "+6221 576 1725 (hunting)",
+      "fax": "+6221 576 2581",
+      "email": "john.wong@cba-energy.com"
+    },
+    "fabricationShopAddress": {
+      "line1": "Jl.Science Timur 1 Blok B 3F No. 2 – 3",
+      "line2": "Kawasan Jababeka V Sertajaya, Cikarang Timur",
+      "city": "Bekasi",
+      "postalCode": "17530",
+      "province": "Jawa Barat",
+      "country": "Indonesia"
+    },
+    "linkedin": "https://www.linkedin.com/company/infimech-id",
+    "instagram": "https://www.instagram.com/infimech/",
+    "whatsapp": "https://wa.me/6282130840365"
   }
 }
