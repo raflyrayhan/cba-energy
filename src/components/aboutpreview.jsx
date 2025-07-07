@@ -13,9 +13,10 @@ export default function AboutPreview({ data }) {
         background: "linear-gradient(to bottom, #FF9800,rgb(63, 62, 61))", // Orange gradient
       }}
     >
-      <div className="container about-text" style={{ maxWidth: 800, margin: "auto" }}>
+      <div className="container about-text" style={{ maxWidth: 1200, margin: "auto", marginBottom: "0px", textAlign: "justify", fontWeight: "500"
+       }}>
         <h2 style={{ textAlign: "center", marginTop: -30 ,marginBottom: 20, color: "white"}}> Who We Are</h2>
-        <p style={{ lineHeight: 1.6, marginBottom: 30, textAlign: "justify", fontSize: "16px", color: "white"}}>
+        <p style={{ lineHeight: 1.6, marginBottom: 30, textAlign: "justify", fontSize: "16px", color: "white", width: "800", marginTop: "30px"}}>
           Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.
         </p>
         <p style={{ lineHeight: 1.6, marginBottom: 30, textAlign: "justify", fontSize: "16px", color: "white"}}>
@@ -24,7 +25,7 @@ export default function AboutPreview({ data }) {
         <p style={{ lineHeight: 1.6, marginBottom: 30, textAlign: "justify", fontSize: "16px", color: "white"}}>
           Licensed to provide full range of project management, engineering, procurement and construction/support services locally.
         </p>
-        <ul style={{ listStyleType: "square", paddingLeft: 20, marginTop: 20 }}>
+        <ul style={{ listStyleType: "square", paddingLeft: 20, marginTop: 20, maxWidth: "800" }}>
           <li style={{ marginBottom: 8, color: "white" }}>ISO 9001</li>
           <li style={{ marginBottom: 8, color: "white" }}>ISO 14001</li>
           <li style={{ marginBottom: 8, color: "white" }}>OHSAS 18001</li>
@@ -50,7 +51,8 @@ export default function AboutPreview({ data }) {
               color: "#F57C00",
               borderRadius: 7,
               textDecoration: "none",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              marginTop: "30px"
             }}
           >
             Read More

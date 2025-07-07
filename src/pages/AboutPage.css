@@ -7,7 +7,7 @@
   max-width: 300px;
   margin: 0 auto 30px;
   background: #ffa000;
-  color: #fff;
+  color: #000000;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
@@ -49,4 +49,22 @@
 @media (max-width: 768px) {
   .section-header { width: 90%; font-size: 1.3rem; }
   .about-list, .about-para, .subsection { padding: 0 15px; }
+}
+
+.footer {
+  background: linear-gradient(#cb4501, #644001);
+  max-height: 60px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  border-color: #1a1000;
+  display: block;
+}
+
+.footer-text{
+  padding-top: 22px;
+  font-weight: 40;
 }

@@ -26,7 +26,7 @@ const listItem = {
 
 export default function AboutPage() {
   return (
-    <main id="about-page" style={{ background: "linear-gradient(to bottom, #FF9800, #F57C00)", minHeight: "100vh" }}>
+    <main id="about-page" style={{ background: "#fff", minHeight: "100vh" }}>
       <AboutHeader />
       
       {/* QUALITY & HSE Section */}
@@ -37,30 +37,31 @@ export default function AboutPage() {
         viewport={{ once: true }}
         variants={sectionVariants}
         style={{ 
-          color: "white", 
+          color: "black", 
           textAlign: "center", 
           marginTop: 30, 
           padding: 20,
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-          borderRadius: "5px"
+          backgroundColor:  "#ffa000",
+          borderRadius: "5px",
+          maxWidth: "1500"
         }}
       >
         QUALITY &amp; HSE
       </motion.div>
-      <motion.div
+      <motion.ul
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
         style={{ 
-          color: "white", 
-          maxWidth: 800, 
+          color: "black", 
+          maxWidth: 1150, 
           margin: "0 auto", 
           padding: "0 20px",
           marginTop: 30
         }}
       >
-        <ul style={{ paddingInlineStart: "20px" }}>
+      
           {[ 
             "A courage to make a breakthrough, belongs by people who have a vision for the future. CBA ENERGY continues to grow, explore, and create new things that build the future.",
             "At CBA ENERGY, we believe that maintaining the highest quality standards is what drives our success. We aspire to excellence in health, safety and environment (HSE) performance by creating and maintaining a culture of zero harm.",
@@ -72,8 +73,7 @@ export default function AboutPage() {
               {text}
             </motion.li>
           ))}
-        </ul>
-      </motion.div>
+          </motion.ul>
       {/* CORE VALUE */}
       <motion.div
         className="section-header"
@@ -81,7 +81,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", textAlign: "center", marginTop: 50, padding: 20 }}
+        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         CORE VALUE
       </motion.div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px" }}
+        style={{ color: "black", maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}
       >
         {[ 
           "Our vision is to be acknowledged by our customers, our people and our shareholders as the leading strategic partner in our market.",
@@ -111,7 +111,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", textAlign: "center", marginTop: 50, padding: 20 }}
+        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         UNIQUE PROFILE
       </motion.div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
+        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
       >
         The fact is that CBA ENERGY is all of the above. CBA ENERGY provides customers with a unique solution for every specific project.
       </motion.p>
@@ -131,7 +131,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px" }}
+        style={{ color: "black", maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}
       >
         {[ 
           "Provides customers with specific and/or generic design engineering",
@@ -152,7 +152,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", textAlign: "center", marginTop: 50, padding: 20 }}
+        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         KEY DIFFERENTIATORS
       </motion.div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
+        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
       >
         CBA ENERGY takes the time to listen, question and understand customers' needs. We tap those insights into our global network, industry expertise, strong judgement and experience to help our customers create the value and specification they're looking for.
       </motion.p>
@@ -174,7 +174,7 @@ export default function AboutPage() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={sectionVariants}
-          style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px", marginBottom: 30 }}
+          style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30 }}
         >
           <h5 className="subheading" style={{ color: "white", marginBottom: 15 }}>{sub}</h5>
           <p style={{ lineHeight: 1.6 }}>
@@ -192,7 +192,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "white", textAlign: "center", marginTop: 50, padding: 20 }}
+        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         OUR STRATEGY
       </motion.div>
@@ -202,7 +202,7 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "white", maxWidth: 800, margin: "0 auto", padding: "0 20px" }}
+        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px" }}
       >
         {[ 
           "Early engagement and validation with an account management team who combines technical expertise with affiliate companies within our group.",
@@ -214,6 +214,12 @@ export default function AboutPage() {
           </motion.li>
         ))}
       </motion.ul>
+
+      <div className="footer">
+        <div className="footer-text">
+        <p>&copy; 2025 PT. Cahaya Bumi Abadi</p>
+        </div>
+      </div>
 
       {/* Back to Top Button */}
       <motion.button
