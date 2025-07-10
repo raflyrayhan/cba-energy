@@ -14,7 +14,7 @@ export default function Footer() {
               <h3 
                 style={{ marginBottom: "20px" }}
               >
-                Our Products
+                Products
               </h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
                <li style={{ marginBottom: "10px" }}>Integrated Steel</li>
@@ -24,18 +24,36 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Services & Solutions */}
-          <div className="col-md-2">
-            <h3 style={{ marginBottom: "20px" }}>Services</h3>
-            <ul style={{ listStyle: "none", padding: 0 }}>
-              <li style={{ marginBottom: "10px" }}>Engineering</li>
-              <li style={{ marginBottom: "10px" }}>Fabrication</li>
-              <li style={{ marginBottom: "10px" }}>Procurement</li>
-              <li style={{ marginBottom: "10px" }}>Construction</li>
-            </ul>
+           <div className="col-md-2">
+            <div style={{ position: "relative" }}>
+              <h3 
+                style={{ marginBottom: "20px" }}
+              >
+                Experience
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+               <li style={{ marginBottom: "10px" }}>Integrated Steel</li>
+                  <li style={{ marginBottom: "10px" }}>Engineered Items</li>
+                  <li style={{ marginBottom: "10px" }}>Package Modular</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Column 3: About Us */}
+           <div className="col-md-2">
+            <div style={{ position: "relative" }}>
+              <h3 
+                style={{ marginBottom: "20px" }}
+              >
+                Partners
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+               <li style={{ marginBottom: "10px" }}>Integrated Steel</li>
+                  <li style={{ marginBottom: "10px" }}>Engineered Items</li>
+                  <li style={{ marginBottom: "10px" }}>Package Modular</li>
+              </ul>
+            </div>
+          </div>
+
           <div className="col-md-2">
             <h3 style={{ marginBottom: "20px" }}>About Us</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
@@ -45,15 +63,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 5: Contact Us */}
           <div className="col-md-3" style={{marginRight: "30px"}}>
             <h3 style={{ marginBottom: "20px" }}>Contact Us</h3>
             <p style={{ marginBottom: "10px" }}>P: +6221 576 1725 (hunting)</p>
             <p style={{ marginBottom: "10px" }}>F: +6221 576 2581</p>
             <p style={{ marginBottom: "10px" }}>sales@cba-energy.com</p>
           </div>
-
-          {/* Column 6: Logo */}
           <div className="col-md-1">
             <img 
               src="img/CBA_logo.png" 
@@ -64,10 +79,9 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="container" style={{ marginTop: "30px", borderTop: "1px solid rgba(255, 255, 255, 0.2)", padding: "20px 0" }}>
         <p style={{ textAlign: "center", fontSize: "14px" }}>
-          © 2025 PT. Cahaya Bumi Abadi | Website by Infimech
+          © 2025 CBA Energy | Website by Infimech
         </p>
       </div>
     </footer>

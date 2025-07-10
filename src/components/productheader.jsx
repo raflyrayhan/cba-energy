@@ -1,12 +1,12 @@
-// src/components/AboutHeader.jsx
+// src/components/productheader.jsx
 import React from "react";
 
-export default function AboutHeader() {
+export default function ProductHeader() {
   return (
     <div className="img-overlay-service">
       <div
         style={{
-          backgroundImage: `url('img/header-image-product.jpg')`, // Use your image path here
+          backgroundImage: `url('img/header-image-prods.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -23,17 +23,17 @@ export default function AboutHeader() {
             left: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent black overlay
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
             zIndex: 1,
           }}
         />
         
         <div className="container" style={{ position: "relative", zIndex: 2 }}>
           <h1 style={{ margin: "0 0 10px", fontSize: "36px", fontWeight: "bold" }}>
-            About CBA Energy
+            CBA Energy's Products
           </h1>
           <p style={{ fontSize: "18px", marginBottom: 0 }}>
-            Learn more about our company and our values
+           List of our products
           </p>
         </div>
       </div>

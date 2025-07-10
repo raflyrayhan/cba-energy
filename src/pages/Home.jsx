@@ -4,13 +4,14 @@ import Header from "../components/header";
 import AboutPreview from "../components/aboutpreview";
 import ServicePreview from "../components/servicepreview";
 import Contact from "../components/contact";
+import JsonData from "../data/data.json"
 
-export default function Home({ headerData, aboutPreviewData, servicesPreviewData, contactData }) {
+export default function Home({contactData}) {
   return (
     <>
-      <Header data={headerData} />
-      <AboutPreview data={aboutPreviewData} />
-      <ServicePreview data={servicesPreviewData} />
+      <Header data={JsonData.header} />
+      <AboutPreview data={JsonData.about} />
+      <ServicePreview data={JsonData.services} />
       <Contact data={contactData} />
     </>
   );

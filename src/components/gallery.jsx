@@ -1,18 +1,27 @@
 import { Image } from "./image";
+import { motion } from "framer-motion";
 import React from "react";
 
+const containerVariants = {
+ hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 }
+  }
+};
 export const Gallery = (props) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <div className="section-title">
-          <h2>Our Projects</h2>
+        <motion.div className="section-title" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerVariants}>
+          <h2 style={{color: "#ffca49"}}>Our Partners</h2>
           <p>
-            With years of hands-on experience, we deliver reliable engineering solutions and smart digital systems tailored to your project needs.
+            Our business hinges on great relationships with our partners, including some of the most successful names in the steelmaking/trading, OEM products and niche supporting services.
           </p>
-        </div>
+        </motion.div>
         <div className="row">
-          <div className="portfolio-items">
+          <motion.div className="portfolio-items" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerVariants}>
             {props.data
               ? props.data.map((d, i) => (
                   <div
@@ -27,13 +36,8 @@ export const Gallery = (props) => {
                   </div>
                 ))
               : "Loading..."}
-          </div>
+          </motion.div>
         </div>
-        <a href="https://www.canva.com/design/DAGULb9JgvM/fONf8Ot4WBtxVGN1lvWTMQ/view?utm_content=DAGULb9JgvM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb8bb96ff92#1">
-        <div className=" btn btn-custom btn-lg page-scroll" style={{marginTop: '30px'}}>
-          See More!
-        </div>
-        </a>
       </div>
     </div>
   );

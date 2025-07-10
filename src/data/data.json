@@ -1,82 +1,135 @@
 {
-  "Header": {
-    "com": "PT. Cahaya Bumi Abadi",
+  "header": {
+    "com": "CBA Energy",
     "title": "Delivering Oil & Gas, Power, and Renewable Energy Projects",
-    "paragraph": "From engineering design to turnkey delivery with QHSE commitment."
+    "paragraph": "We design, build, and maintain reliable energy systems worldwide, tailored to your needs."
   },
-  "Aboutpreview": {
-    "para": [
-      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
-      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
-      "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
-    ],
-    "list": [
-      "ISO 9001",
-      "ISO 14001",
-      "OHSAS 18001",
-      "CSMS Certificate",
-      "SKT/SKUP Migas, CIVD SKKMigas, SBU/SIUJK large scale, NIK Importer"
+  "about": {
+    "line1": "At CBA Energy, we leverage best practices and transferable skills learned from the oil & gas industry to deliver high-quality products and services across multiple sectors.",
+    "line2": "Our capability to provide end-to-end solutions—from engineering and procurement to construction and maintenance—makes us the partner of choice."
+  },
+  "services": {
+    "line1": "From subsea to surface and concept to decommissioning, our technical expertise and strong partnerships provide energy-related industries with what they need to succeed.",
+    "services": [
+      "Oil & Gas – Upstream/Downstream",
+      "Power & Renewables Energy",
+      "Energy Transmission & Distribution"
     ]
-  },
-  "About": {
-    "paragraph": [
-      "Formed in 2009 (and re-branded in 2013) as specialty supplier and contractor. Now built reputation with applying unique methods in supplying goods and service within energy related industry.",
-      "Work closely and formed strategic partnerships with numerous entities engineering center, worldwide manufacturers, fabricators and specific providers that offers specialized skills to cater specific needs.",
-      "Licensed to provide full range of project management, engineering, procurement and construction/support services locally."
-    ],
-    "Why": [
-      "Deep expertise in CFD and FEA engineering",
-      "Fast and reliable simulation services",
-      "Integrated digital tools for productivity",
-      "Proven track record in industrial innovation"
-    ],
-    "Why2": []
   },
   "Gallery": [
     {
-      "title": "Heat Transfer",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/01-small.png"
     },
     {
-      "title": "Fluid Flow and Particle Dispersion",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/02-small.png"
     },
     {
-      "title": "Sucker Rod Analysis",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/03-small.png"
     },
     {
-      "title": "Optimal Cooling & Stable Temperature",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/04-small.png"
     },
     {
-      "title": "Energy-Efficient Vehicle Performance Analysis",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/05-small.png"
     },
     {
-      "title": "Static Stress Analysis",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/06-small.png"
     },
     {
-      "title": "In Service Welding Analysis",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/07-small.png"
     },
     {
-      "title": "HSRG Improvement",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/08-small.png"
     },
     {
-      "title": "Fluid Flow",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/10-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/11-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/12-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/13-small.png"
+    },{
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/14-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/15-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/16-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/17-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/18-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/19-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/20-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/21-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/22-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/23-small.png"
+    },
+    {
+      "title": "Visit",
+      "largeImage": "#",
+      "smallImage": "img/portfolio/24-small.png"
     }
   ],
   "Services": [

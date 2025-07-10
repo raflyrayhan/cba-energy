@@ -6,6 +6,9 @@ import Navigation from "./components/navigation";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Service";
+import ExperiencePage from "./pages/Experience";
+import ProductPage from "./pages/Product";
+import Partner from "./pages/Partner";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -41,14 +44,11 @@ export default function App() {
         />
         <Route path="/about" element={<AboutPage />} />
         <Route
-          path="/services"
-          element={
-            <ServicesPage
-              headerData={landingPageData.Header}
-              servicesData={landingPageData.Services}
-            />
-          }
+          path="/experience"
+          element={<ExperiencePage/>}
         />
+        <Route path="/products" element={<ProductPage/>}/>
+        <Route path="/partners" element={<Partner/>}/>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

@@ -39,8 +39,23 @@ export default function Navigation(props) {
               </a>
             </li>
             <li>
-              <a href="/services" className="page-scroll">
-                Services
+              <a href="/experience" className="page-scroll">
+                Experience
+              </a>
+            </li>
+            <li>
+              <a href="/products" className="page-scroll">
+                Products
+              </a>
+            </li>
+             <li>
+              <a href="/partners" className="page-scroll">
+                Partners
+              </a>
+            </li>
+            <li>
+              <a href="#" className="page-scroll">
+                Gallery
               </a>
             </li>
             <li>

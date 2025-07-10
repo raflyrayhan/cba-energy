@@ -14,9 +14,7 @@ const sectionVariants = {
 
 const listContainer = {
   hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 }
-  }
+  visible: { transition: { staggerChildren: 0.2 } }
 };
 
 const listItem = {
@@ -25,72 +23,46 @@ const listItem = {
 };
 
 export default function AboutPage() {
-
-  const isoImage = [
-    "img/iso.png"
+  const qualityItems = [
+    "A courage to make a breakthrough, belongs by people who have a vision for the future. CBA ENERGY continues to grow, explore, and create new things that build the future.",
+    "At CBA ENERGY, we believe that maintaining the highest quality standards is what drives our success. We aspire to excellence in health, safety and environment (HSE) performance by creating and maintaining a culture of zero harm.",
+    "The objective of our Quality & HSE Policy is not only to satisfy, but also to exceed expectations by constant improvement of our products and services.",
+    "Our Quality & HSE Management System is continuously reviewed to keep pace with new technology, standards, regulations and codes of practice.",
+    "We are a company certified to ISO 9001:2008, ISO 14001:2009 and OHSAS 18001:2007."
   ];
+
+  const coreItems = [
+    "Our vision is to be acknowledged by our customers, our people and our shareholders as the leading strategic partner in our market.",
+    "We constantly strive to improve the efficiency of our business by investing in the development of our people and through innovation in technology, operations and processes.",
+    "Our mission is to meet the expectations of our customers and shareholders in developing a capable and creative company within our market."
+  ];
+
+  const uniqueItems = [
+    "Provides customers with specific and/or generic design engineering",
+    "Performs specific and/or generic fabricated items",
+    "Supplies specialty engineered goods",
+    "Delivers a specific scope of work as required by customer requirements"
+  ];
+
+  const strategyItems = [
+    "Early engagement and validation with an account management team who combines technical expertise with affiliate companies within our group.",
+    "Partnering with other leading organizations in complementary sectors to provide packaged solutions.",
+    "Investing in local infrastructure and integration of our local team."
+  ];
+
   return (
-    <main id="about-page" style={{ background: "#fff", minHeight: "100vh" }}>
+    <main id="about-page">
       <AboutHeader />
-      
-      {/* QUALITY & HSE Section */}
+
+      {/* QUALITY & HSE */}
       <motion.div
         className="section-header"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ 
-          color: "black", 
-          textAlign: "center", 
-          marginTop: 30, 
-          padding: 20,
-          backgroundColor:  "#ffa000",
-          borderRadius: "5px",
-          maxWidth: "1500"
-        }}
       >
         QUALITY &amp; HSE
-      </motion.div>
-      <motion.ul
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={sectionVariants}
-        style={{ 
-          color: "black", 
-          maxWidth: 1150, 
-          margin: "0 auto", 
-          padding: "0 20px",
-          marginTop: 30
-        }}
-      >
-      
-          {[ 
-            "A courage to make a breakthrough, belongs by people who have a vision for the future. CBA ENERGY continues to grow, explore, and create new things that build the future.",
-            "At CBA ENERGY, we believe that maintaining the highest quality standards is what drives our success. We aspire to excellence in health, safety and environment (HSE) performance by creating and maintaining a culture of zero harm.",
-            "The objective of our Quality & HSE Policy is not only to satisfy, but also to exceed expectations by constant improvement of our products and services.",
-            "Our Quality & HSE Management System is continuously reviewed to keep pace with new technology, standards, regulations and codes of practice.",
-            "We are a company certified to ISO 9001:2008, ISO 14001:2009 and OHSAS 18001:2007."
-          ].map((text, i) => (
-            <motion.li key={i} variants={listItem} style={{ marginBottom: 15, lineHeight: 1.6 }}>
-              {text}
-            </motion.li>
-          ))}
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "30px 30px"}}>
-          <img src={isoImage} alt="iso" style={{maxWidth: "50%"}}/>
-          </div>
-          </motion.ul>
-      {/* CORE VALUE */}
-      <motion.div
-        className="section-header"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={sectionVariants}
-        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
-      >
-        CORE VALUE
       </motion.div>
       <motion.ul
         className="about-list"
@@ -98,18 +70,51 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "black", maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}
       >
-        {[ 
-          "Our vision is to be acknowledged by our customers, our people and our shareholders as the leading strategic partner in our market.",
-          "We constantly strive to improve the efficiency of our business by investing in the development of our people and through innovation in technology, operations and processes.",
-          "Our mission is to meet the expectations of our customers and shareholders in developing a capable and creative company within our market."
-        ].map((text, i) => (
-          <motion.li key={i} variants={listItem} style={{ marginBottom: 15, lineHeight: 1.6 }}>
+        {qualityItems.map((text, i) => (
+          <motion.li key={i} className="about-list-item" variants={listItem}>
             {text}
           </motion.li>
         ))}
+        <div>
+          <img src="img/iso.png" alt="ISO certificates" style={{maxWidth: "35%"}}/>
+        </div>
       </motion.ul>
+
+      {/* CORE VALUE */}
+      <motion.div
+        className="section-header"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        CORE VALUE
+      </motion.div>
+      <div className="about-parent">
+        <motion.ul
+          className="about-list about-div1"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={listContainer}
+        >
+          {coreItems.map((text, i) => (
+            <motion.li key={i} variants={listItem}>
+              {text}
+            </motion.li>
+          ))}
+        </motion.ul>
+        <motion.div
+          className="about-div2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+        >
+          <img src="img/core_value.png" alt="Core Values Illustration" style={{width:"50%"}}/>
+        </motion.div>
+      </div>
 
       {/* UNIQUE PROFILE */}
       <motion.div
@@ -118,7 +123,6 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         UNIQUE PROFILE
       </motion.div>
@@ -128,9 +132,11 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
       >
-        The fact is that CBA ENERGY is all of the above. CBA ENERGY provides customers with a unique solution for every specific project.
+        <b>
+          The fact is that CBA ENERGY is all of the above. CBA ENERGY provides
+          customers with a unique solution for every specific project.
+        </b>
       </motion.p>
       <motion.ul
         className="about-list"
@@ -138,15 +144,9 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "black", maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}
       >
-        {[ 
-          "Provides customers with specific and/or generic design engineering",
-          "Performs specific and/or generic fabricated items",
-          "Supplies specialty engineered goods",
-          "Delivers a specific scope of work as required by customer requirements"
-        ].map((text, i) => (
-          <motion.li key={i} variants={listItem} style={{ marginBottom: 15, lineHeight: 1.6 }}>
+        {uniqueItems.map((text, i) => (
+          <motion.li key={i} variants={listItem}>
             {text}
           </motion.li>
         ))}
@@ -159,7 +159,6 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         KEY DIFFERENTIATORS
       </motion.div>
@@ -169,9 +168,13 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30, lineHeight: 1.6 }}
       >
-        CBA ENERGY takes the time to listen, question and understand customers' needs. We tap those insights into our global network, industry expertise, strong judgement and experience to help our customers create the value and specification they're looking for.
+        <b>
+        CBA ENERGY takes the time to listen, question and understand customers'
+        needs. We tap those insights into our global network, industry
+        expertise, strong judgement and experience to help our customers create
+        the value and specification they're looking for.
+        </b>
       </motion.p>
       {["Our people", "Our knowledge"].map((sub, i) => (
         <motion.div
@@ -181,10 +184,9 @@ export default function AboutPage() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={sectionVariants}
-          style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px", marginBottom: 30 }}
         >
-          <h5 className="subheading" style={{ color: "white", marginBottom: 15 }}>{sub}</h5>
-          <p style={{ lineHeight: 1.6 }}>
+          <h5 className="subheading">{sub}</h5>
+          <p>
             {sub === "Our people"
               ? "We aim to draw out people from the best talent and develop them to be the very best in our sector. We ensure our people are immersed in local knowledge about the markets they serve, while gaining global perspective from our worldwide partners."
               : "Our worldwide network of industry sector specialists are linked by a sophisticated knowledge management system, giving customers the tools to input their insights and draw upon the most up‐to‐date, valuable information."}
@@ -199,7 +201,6 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
-        style={{ color: "black", textAlign: "center", marginTop: 50, padding: 20, maxWidth: "1500"}}
       >
         OUR STRATEGY
       </motion.div>
@@ -209,46 +210,26 @@ export default function AboutPage() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={listContainer}
-        style={{ color: "black", maxWidth: 1150, margin: "0 auto", padding: "0 20px" }}
       >
-        {[ 
-          "Early engagement and validation with an account management team who combines technical expertise with affiliate companies within our group.",
-          "Partnering with other leading organizations in complementary sectors to provide packaged solutions.",
-          "Investing in local infrastructure and integration of our local team."
-        ].map((text, i) => (
-          <motion.li key={i} variants={listItem} style={{ marginBottom: 15, lineHeight: 1.6 }}>
+        {strategyItems.map((text, i) => (
+          <motion.li key={i} variants={listItem}>
             {text}
           </motion.li>
         ))}
       </motion.ul>
 
-      <div className="footer">
-        <div className="footer-text">
-        <p>&copy; 2025 PT. Cahaya Bumi Abadi</p>
+      {/* FOOTER */}
+      <footer className="product-footer">
+        <div className="product-footer__inner">
+          <p>© 2025 CBA Energy | Website by Infimech</p>
         </div>
-      </div>
+      </footer>
 
-      {/* Back to Top Button */}
+      {/* BACK TO TOP */}
       <motion.button
+        className="back-to-top-button"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        style={{ 
-          position: "fixed",
-          bottom: 30,
-          right: 30,
-          backgroundColor: "white",
-          color: "#FF9800",
-          border: "none",
-          borderRadius: "50%",
-          width: 50,
-          height: 50,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: 20,
-          cursor: "pointer",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.2)"
-        }}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         ↑
