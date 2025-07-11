@@ -9,6 +9,7 @@ import ServicesPage from "./pages/Service";
 import ExperiencePage from "./pages/Experience";
 import ProductPage from "./pages/Product";
 import Partner from "./pages/Partner";
+import ContactUs from "./pages/Contactus";
 import JsonData from "./data/data.json";
 import "./App.css";
 
@@ -49,6 +50,7 @@ export default function App() {
         />
         <Route path="/products" element={<ProductPage/>}/>
         <Route path="/partners" element={<Partner/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

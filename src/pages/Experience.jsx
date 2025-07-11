@@ -34,7 +34,7 @@ export default function ExperiencePage() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        All Other Projects
+        All Projects
       </motion.div>
       <motion.div
         className="exp-table-container"

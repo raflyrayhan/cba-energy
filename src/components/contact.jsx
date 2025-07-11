@@ -32,9 +32,8 @@ export default function Footer() {
                 Experience
               </h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
-               <li style={{ marginBottom: "10px" }}>Integrated Steel</li>
-                  <li style={{ marginBottom: "10px" }}>Engineered Items</li>
-                  <li style={{ marginBottom: "10px" }}>Package Modular</li>
+               <li style={{ marginBottom: "10px" }}>Closed Projects List</li>
+               <li style={{ marginBottom: "10px" }}>Projects Gallery</li>
               </ul>
             </div>
           </div>
@@ -47,9 +46,10 @@ export default function Footer() {
                 Partners
               </h3>
               <ul style={{ listStyle: "none", padding: 0 }}>
-               <li style={{ marginBottom: "10px" }}>Integrated Steel</li>
-                  <li style={{ marginBottom: "10px" }}>Engineered Items</li>
-                  <li style={{ marginBottom: "10px" }}>Package Modular</li>
+               <li style={{ marginBottom: "10px" }}>Integrated Steel Manufacturers</li>
+                  <li style={{ marginBottom: "10px" }}>OEM Manufacturers</li>
+                  <li style={{ marginBottom: "10px" }}>Supporting Services-Local</li>
+                  <li style={{ marginBottom: "10px" }}>Supporting Services-Global</li>
               </ul>
             </div>
           </div>
@@ -57,9 +57,11 @@ export default function Footer() {
           <div className="col-md-2">
             <h3 style={{ marginBottom: "20px" }}>About Us</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li style={{ marginBottom: "10px" }}>History</li>
-              <li style={{ marginBottom: "10px" }}>Innovation</li>
-              <li style={{ marginBottom: "10px" }}>Experience</li>
+              <li style={{ marginBottom: "10px" }}>Quality & HSE</li>
+              <li style={{ marginBottom: "10px" }}>Core Value</li>
+              <li style={{ marginBottom: "10px" }}>Unique Profile</li>
+              <li style={{ marginBottom: "10px" }}>Key Differentiators</li>
+              <li style={{ marginBottom: "10px" }}>Our Strategy</li>
             </ul>
           </div>
 

@@ -1,7 +1,18 @@
 import React from "react";
 import { Gallery } from "../components/gallery";
 import JsonData from "../data/data.json";
+import PartnerHeader from "../components/partnerheader";
+import { motion } from "framer-motion";
 import "./partnerpage.css";
+
+const sectionVariants = {
+  hidden: { opacity: 0, x: -200 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8 }
+  }
+};
 
 const partnerCategories = [
   {
@@ -60,10 +71,17 @@ export default function Partner() {
 return(
 
     <main>
+        <PartnerHeader/>
+         <motion.div
+        className="section-header"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        Top Partners
+      </motion.div>
         <Gallery data={JsonData.Gallery} />
-        <p style={{textAlign: "center", color: "#FF6600", fontWeight: "500", fontSize: "2rem"}}>
-            Most of our partner relationships are long term and enduring.
-        </p>
 <div className="partners-grid">
         {partnerCategories.map((cat, idx) => (
           <div className="partner-card" key={idx}>

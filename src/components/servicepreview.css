@@ -1,13 +1,13 @@
 /* src/components/ServicePreview.css */
 #services-preview .services-bg {
   position: relative;
-  height: 60vh;
+  height: 90vh;
   background: url("../../public/img/header-image-serve.jpg") center/cover no-repeat;
 }
 #services-preview .services-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.4));
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -21,6 +21,7 @@
   font-size: 2.5rem;
   color: #ffca49;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .services-content p {
   font-size: 1rem;

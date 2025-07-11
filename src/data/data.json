@@ -19,116 +19,32 @@
   "Gallery": [
     {
       "title": "Visit",
-      "largeImage": "#",
+      "largeImage": "https://corporate.arcelormittal.com/",
       "smallImage": "img/portfolio/01-small.png"
     },
     {
       "title": "Visit",
-      "largeImage": "#",
+      "largeImage": "https://top-f.co.id/",
       "smallImage": "img/portfolio/02-small.png"
     },
     {
       "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/03-small.png"
+      "largeImage": "https://www.prysmian.com/en",
+      "smallImage": "img/portfolio/25-small.png"
     },
     {
       "title": "Visit",
-      "largeImage": "#",
+      "largeImage": "https://www.thyssenkrupp-materials-services.com/",
       "smallImage": "img/portfolio/04-small.png"
     },
     {
       "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/05-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/06-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/07-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/08-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
+      "largeImage": "https://www.kanematsu.co.jp/en",
       "smallImage": "img/portfolio/10-small.png"
     },
     {
       "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/11-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/12-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/13-small.png"
-    },{
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/14-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/15-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/16-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/17-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/18-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/19-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/20-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/21-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/22-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
-      "smallImage": "img/portfolio/23-small.png"
-    },
-    {
-      "title": "Visit",
-      "largeImage": "#",
+      "largeImage": "https:\\infimech-tech.vercel.app",
       "smallImage": "img/portfolio/24-small.png"
     }
   ],
@@ -221,27 +137,13 @@
     }
   ],
   "Contact": {
-    "comname": "PT. CAHAYA BUMI ABADI",
-    "officeAddress": {
-      "line1": "Menara Rajawali, 15th Floor",
-      "line2": "Jl. DR Ide Anak Agung Gde Agung Lot 5.1",
-      "line3": "Kawasan Mega Kuningan, Jakarta",
-      "postalCode": "Selatan 12920",
-      "country": "Indonesia",
-      "phone": "+6221 576 1725 (hunting)",
-      "fax": "+6221 576 2581",
-      "email": "john.wong@cba-energy.com"
-    },
-    "fabricationShopAddress": {
-      "line1": "Jl.Science Timur 1 Blok B 3F No. 2 – 3",
-      "line2": "Kawasan Jababeka V Sertajaya, Cikarang Timur",
-      "city": "Bekasi",
-      "postalCode": "17530",
-      "province": "Jawa Barat",
-      "country": "Indonesia"
-    },
-    "linkedin": "https://www.linkedin.com/company/infimech-id",
-    "instagram": "https://www.instagram.com/infimech/",
-    "whatsapp": "https://wa.me/6282130840365"
+    "address1": "Gedung Menara Rajawali Lt. 15 Jl. DR. Ide Anak Agung Gde Agung Lot. 5.1 Kuningan Timur, Setiabudi, Jakarta Selatan 12950",
+    "address2": "Jl. Jababeka IV E, Blok V No. 78Q, Kawasan Industri Jababeka I Pasir Gombong, Cikarang Utara – Kab. Bekasi 17530",
+    "phone": "P: +6221 576 1725 (hunting)",
+    "phone2": "F: +6221 576 2581",
+    "email": "sales@cba-energy.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
   }
 }

@@ -14,12 +14,6 @@ export const Gallery = (props) => {
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
-        <motion.div className="section-title" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerVariants}>
-          <h2 style={{color: "#ffca49"}}>Our Partners</h2>
-          <p>
-            Our business hinges on great relationships with our partners, including some of the most successful names in the steelmaking/trading, OEM products and niche supporting services.
-          </p>
-        </motion.div>
         <div className="row">
           <motion.div className="portfolio-items" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={containerVariants}>
             {props.data

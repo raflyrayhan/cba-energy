@@ -496,12 +496,14 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-  padding: 15vh 0;
+  padding: 5vh 0;
 }
 .portfolio-item {
   margin: 2vh auto;
   padding: 0;
   max-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 .5rem .001rem #F57C00;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
@@ -604,8 +606,8 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
-  background: linear-gradient(to right, #1a237e 0%, #3949ab 100%);
+  padding: 15vh 0 ;
+  background: linear-gradient(to bottom, #ffa74e 0%, #ffa200 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
