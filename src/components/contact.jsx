@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 
 export default function Footer() {
-  const [isProductsDropdownOpen, setProductsDropdownOpen] = useState(false);
+  // eslint-disable-next-line no-empty-pattern
+  const [] = useState(false);
 
   return (
     <footer style={{ backgroundImage: "linear-gradient(180deg, rgba(232, 128, 2, 1), rgb(44, 38, 33))", color: "white", padding: "20px 0" }}>

@@ -1,16 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { motion } from "framer-motion";
 import React from "react";
 
-const sectionVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6 }
-  }
-};
 
 const initialState = {
   name: "",
@@ -31,6 +22,7 @@ export const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
     
+    // eslint-disable-next-line no-lone-blocks
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
     
     emailjs
@@ -155,7 +147,7 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                  <li>
-                      <a href= "#" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-linkedin"></i>
                       </a>
                     </li>

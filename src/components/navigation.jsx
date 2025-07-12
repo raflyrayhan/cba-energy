@@ -18,7 +18,7 @@ export default function Navigation(props) {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="/">
-            <img src="img/CBA_logo.png" className="logo-img"/>
+            <img src="img/CBA_logo.png" className="logo-img" alt="CBA Logo"/>
           </a>{" "}
           
         </div>

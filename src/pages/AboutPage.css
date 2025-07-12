@@ -58,9 +58,7 @@
   margin: 2rem auto;
   padding: 0 2vw;
 }
-.about-div1 {
-  /* text block */
-}
+/* .about-div1 removed: empty ruleset */
 .about-div2 {
   /* image block */
   display: flex;

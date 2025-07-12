@@ -1,7 +1,6 @@
 import React from "react";
 import { Contact } from "../components/contactus";
 import JsonData from "../data/data.json";
-import { motion } from "framer-motion";
 
 export default function ContactUs(){
     return(
