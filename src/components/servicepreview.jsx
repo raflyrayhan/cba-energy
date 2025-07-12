@@ -15,7 +15,7 @@ export default function ServicePreview({ data }) {
             <ul>
               {data.services.map((s, i) => <li key={i}>{s}</li>)}
             </ul>
-            <a href="/services" className="btn-custom">See Our Services</a>
+            <a href="/experience" className="btn-custom">Check Our Experiences</a>
           </div>
         </div>
       </div>

@@ -7,14 +7,16 @@
 #about-preview .about-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.2));
+  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.4));
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0 2rem;
 }
 .about-content {
-  max-width: 800px;
+  text-align: justify;
+  padding-left: 10vh;
+  max-width: 600px;
   color: white;
 }
 .about-content h2 {
