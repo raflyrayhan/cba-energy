@@ -5,7 +5,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Navigation from "./components/navigation";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
-import ServicesPage from "./pages/Service";
 import ExperiencePage from "./pages/Experience";
 import ProductPage from "./pages/Product";
 import Partner from "./pages/Partner";

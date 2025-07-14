@@ -50,83 +50,83 @@
   ],
   "Services": [
     {
-      "image": "img/cfd.png",
-      "name": "Computational Fluid Dynamics",
-      "text": "We offer CFD simulation services to analyze fluid flow, heat transfer, and aerodynamic behavior. Ideal for product development, HVAC system optimization, thermal processes, and applications in automotive, aerospace, and energy industries."
+      "image": "*",
+      "name": "*",
+      "text": "*"
     },
     {
-      "image": "img/fea.png",
-      "name": "Finite Element Analysis",
-      "text": "Our FEA services help evaluate structural strength, deformation, and stress distribution. Suitable for mechanical design, aircraft components, civil structures, and any engineering part that requires durability and performance validation."
+      "image": "*",
+      "name": "*",
+      "text": "*"
     },
     {
-      "image": "img/erp.png",
-      "name": "Custom-built Project ERP",
-      "text": "We develop tailored ERP platforms specifically for engineering and manufacturing projects. Our solutions integrate project management, procurement, document control, asset tracking, and real-time reporting to ensure efficiency, visibility, and digital transformation."
+      "image": "*",
+      "name": "*",
+      "text": "*"
     }
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"This collaboration with Infimech Technology has brought new ideas that drive efficiency and innovation in our company. Truly valuable!\"",
-      "name": "Agus Sudradjat",
-      "company": "Director at PT. Rekayasa Energi Bersama"
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
     },
     {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Thank you to Infimech Team for the insights provided. We are able to implement better innovations to improve public services!\"",
-      "name": "Fajar Sulistyono",
-      "company": "Quality Control Vehicle Division at Dishub"
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
     },
     {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"The approach offered is highly relevant to the needs of the industry. We feel the real benefits in increased productivity.\"",
-      "name": "Nova Arifien",
-      "company": "Sr. Well Engineer at Pertamina Hulu Rokan"
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
     },
     {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"This cooperation with Infimech not only supports business processes but also adds value in creating sustainable solutions.\"",
-      "name": "Suryanto Zhang",
-      "company": "Project Manager at PT. Matin Perkasa"
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
     },
     {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"An extraordinary collaboration experience with Infimech, providing a new perspective that is much needed in our workplace.\"",
-      "name": "Sutomo",
-      "company": "Sr. Process Engineer at Pacific Process Engineering"
+      "img": "*",
+      "text": "*",
+      "name": "*",
+      "company": "*"
     }
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "Agus Sudradjat",
-      "job": "Director"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Aji Candra Lestari",
-      "job": "Chief Technical Officer"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Andry Ali",
-      "job": "Chief Marketing Officer"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Anggriawan R. Rinukti",
-      "job": "Senior Engineer"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     },
     {
-      "img": "img/team/05.jpg",
-      "name": "Gilang Destya Widodo",
-      "job": "Senior Engineer"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     },
     {
-      "img": "img/team/06.jpg",
-      "name": "Rafly Rayhan M.",
-      "job": "Representative Engineer & IT Personnel"
+      "img": "*",
+      "name": "*",
+      "job": "*"
     }
   ],
   "Affiliator": [

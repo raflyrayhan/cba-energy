@@ -54,7 +54,6 @@ export default function AboutPage() {
     <main id="about-page">
       <AboutHeader />
 
-      {/* QUALITY & HSE */}
       <motion.div
         className="section-header"
         initial="hidden"
@@ -116,7 +115,6 @@ export default function AboutPage() {
         </motion.div>
       </div>
 
-      {/* UNIQUE PROFILE */}
       <motion.div
         className="section-header"
         initial="hidden"
@@ -152,7 +150,6 @@ export default function AboutPage() {
         ))}
       </motion.ul>
 
-      {/* KEY DIFFERENTIATORS */}
       <motion.div
         className="section-header"
         initial="hidden"
@@ -194,7 +191,6 @@ export default function AboutPage() {
         </motion.div>
       ))}
 
-      {/* OUR STRATEGY */}
       <motion.div
         className="section-header"
         initial="hidden"
@@ -218,14 +214,12 @@ export default function AboutPage() {
         ))}
       </motion.ul>
 
-      {/* FOOTER */}
       <footer className="product-footer">
         <div className="product-footer__inner">
           <p>© 2025 CBA Energy | Website by Infimech</p>
         </div>
       </footer>
 
-      {/* BACK TO TOP */}
       <motion.button
         className="back-to-top-button"
         whileHover={{ scale: 1.1 }}

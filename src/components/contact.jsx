@@ -9,7 +9,6 @@ export default function Footer() {
     <footer style={{ backgroundImage: "linear-gradient(180deg, rgba(232, 128, 2, 1), rgb(44, 38, 33))", color: "white", padding: "20px 0" }}>
       <div className="container">
         <div className="row" style={{ display: "flex", justifyContent: "space-between" }}>
-          {/* Column 1: Our Products with Dropdown */}
           <div className="col-md-2">
             <div style={{ position: "relative" }}>
               <h3 

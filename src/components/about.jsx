@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 export const About = (props) => {
 
   const aboutImages = [
@@ -26,6 +24,7 @@ export const About = (props) => {
         
             <img
               src={aboutImages}
+              alt="About section"
               className="about-img"
               style={{ maxWidth: "100%", borderRadius: "8px" }}
             />
