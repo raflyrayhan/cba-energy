@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AboutHeader from "../components/aboutheader";
 import "./AboutPage.css";
 
 const sectionVariants = {
@@ -23,19 +22,22 @@ const listItem = {
 };
 
 export default function AboutPage() {
-  const qualityItems = [
-    "A courage to make a breakthrough, belongs by people who have a vision for the future. CBA ENERGY continues to grow, explore, and create new things that build the future.",
-    "At CBA ENERGY, we believe that maintaining the highest quality standards is what drives our success. We aspire to excellence in health, safety and environment (HSE) performance by creating and maintaining a culture of zero harm.",
-    "The objective of our Quality & HSE Policy is not only to satisfy, but also to exceed expectations by constant improvement of our products and services.",
-    "Our Quality & HSE Management System is continuously reviewed to keep pace with new technology, standards, regulations and codes of practice.",
-    "We are a company certified to ISO 9001:2008, ISO 14001:2009 and OHSAS 18001:2007."
-  ];
 
   const coreItems = [
-    "Our vision is to be acknowledged by our customers, our people and our shareholders as the leading strategic partner in our market.",
-    "We constantly strive to improve the efficiency of our business by investing in the development of our people and through innovation in technology, operations and processes.",
-    "Our mission is to meet the expectations of our customers and shareholders in developing a capable and creative company within our market."
-  ];
+  {
+    lead: "Be recognized by customers, employees, and shareholders",
+    rest: "as the premier strategic partner."
+  },
+  {
+    lead: "Continuously boost efficiency",
+    rest: "through people development and technological innovation."
+  },
+  {
+    lead: "Exceed customer and shareholder expectations",
+    rest: "by building a capable, creative company."
+  }
+];
+
 
   const uniqueItems = [
     "Provides customers with specific and/or generic design engineering",
@@ -52,89 +54,75 @@ export default function AboutPage() {
 
   return (
     <main id="about-page">
-      <AboutHeader />
+      <motion.section 
+        className="about-hero"
+        initial="hidden" 
+        whileInView="visible" 
+        viewport={{ once: true }} 
+        variants={sectionVariants}
+      >
+        <h1 style={{fontSize: "4.5rem", fontWeight: "800"}}>About Us</h1>
+        <p style={{fontsize: "3rem"}}>Your trusted partner in energy innovation, quality & safety.</p>
+      </motion.section>
 
       <motion.div
-        className="section-header"
+        className="quality-card"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        QUALITY &amp; HSE
+        <h2><b style={{color:"orange"}}>QUALITY</b> <b style={{color:"black", fontSize:"3.5rem"}}>&amp;</b> <b style={{color:"navy"}}>HSE</b></h2>
+        <p style={{ fontSize: "2rem" }}><b style={{color: "orange"}}>CBA</b> <b style={{color: "navy"}}>Energy</b> drives future-focused innovation with uncompromising quality and a <b>zero-harm</b> HSE culture, continuously improving our management system and holding <b>ISO 9001:2008, ISO 14001:2009, and OHSAS 18001:2007</b> certifications.</p>
+        <img src="img/iso.png" alt="ISO Certifications" style={{maxWidth: "30%"}} />
       </motion.div>
-      <motion.ul
-        className="about-list"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={listContainer}
-      >
-        {qualityItems.map((text, i) => (
-          <motion.li key={i} className="about-list-item" variants={listItem}>
-            {text}
-          </motion.li>
-        ))}
-        <div>
-          <img src="img/iso.png" alt="ISO certificates" style={{maxWidth: "35%"}}/>
-        </div>
-      </motion.ul>
-
+        
       {/* CORE VALUE */}
       <motion.div
-        className="section-header"
+        className="quality-card"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        CORE VALUE
+        <h2><b style={{color: "orange"}}>CORE</b> <b style={{color: "navy"}}>VALUE</b></h2>
+        {coreItems.map(({ lead, rest }, i) => (
+  <motion.div
+    key={i}
+    className={`core-card ${i % 2 ? "reverse" : ""}`}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={sectionVariants}
+  >
+    <div className="core-text">
+      <p style={{ fontSize: "2rem", marginBottom: "1rem", textAlign: "left" }}>
+        <strong>{lead}</strong> {rest}
+      </p>
+    </div>
+    <div className="core-img">
+      <img src="img/core_value.png" alt="Core Value Illustration" />
+    </div>
+  </motion.div>
+))}
       </motion.div>
-      <div className="about-parent">
-        <motion.ul
-          className="about-list about-div1"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={listContainer}
-        >
-          {coreItems.map((text, i) => (
-            <motion.li key={i} variants={listItem}>
-              {text}
-            </motion.li>
-          ))}
-        </motion.ul>
-        <motion.div
-          className="about-div2"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={sectionVariants}
-        >
-          <img src="img/core_value.png" alt="Core Values Illustration" style={{width:"50%"}}/>
-        </motion.div>
-      </div>
-
+     
       <motion.div
-        className="section-header"
+        className="quality-card"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        UNIQUE PROFILE
-      </motion.div>
-      <motion.p
+       <h2><b style={{color: "orange"}}>UNIQUE</b> <b style={{color: "navy"}}>PROFILE</b></h2>
+        <motion.p
         className="about-para"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        <b>
-          The fact is that CBA ENERGY is all of the above. CBA ENERGY provides
-          customers with a unique solution for every specific project.
-        </b>
+          <p style={{ fontSize: "2rem" }}><b style={{color: "orange"}}>CBA </b> <b style={{color: "navy"}}>Energy </b> provides customers with a unique solution for every specific project</p>
       </motion.p>
       <motion.ul
         className="about-list"
@@ -149,29 +137,25 @@ export default function AboutPage() {
           </motion.li>
         ))}
       </motion.ul>
+      </motion.div>
+      
 
       <motion.div
-        className="section-header"
+        className="quality-card"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        KEY DIFFERENTIATORS
-      </motion.div>
-      <motion.p
+        <h2><b style={{color: "orange"}}>KEY</b> <b style={{color: "navy"}}>DIFFERENTIATORS</b></h2>
+        <motion.p
         className="about-para"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={sectionVariants}
       >
-        <b>
-        CBA ENERGY takes the time to listen, question and understand customers'
-        needs. We tap those insights into our global network, industry
-        expertise, strong judgement and experience to help our customers create
-        the value and specification they're looking for.
-        </b>
+       <p style={{ fontSize: "2rem" }}><b style={{color: "orange"}}>CBA</b> <b style={{color: "navy"}}>Energy</b> listens closely to understand your needs, then taps our global network and industry expertise to deliver precisely the value you seek.</p>
       </motion.p>
       {["Our people", "Our knowledge"].map((sub, i) => (
         <motion.div
@@ -185,11 +169,13 @@ export default function AboutPage() {
           <h5 className="subheading">{sub}</h5>
           <p>
             {sub === "Our people"
-              ? "We aim to draw out people from the best talent and develop them to be the very best in our sector. We ensure our people are immersed in local knowledge about the markets they serve, while gaining global perspective from our worldwide partners."
-              : "Our worldwide network of industry sector specialists are linked by a sophisticated knowledge management system, giving customers the tools to input their insights and draw upon the most up‐to‐date, valuable information."}
+              ? "We cultivate local talent and equip them with global insights."
+              : "Our specialists and knowledge-management platform keep you up to date with the latest market intelligence."}
           </p>
         </motion.div>
       ))}
+      </motion.div>
+      
 
       <motion.div
         className="section-header"

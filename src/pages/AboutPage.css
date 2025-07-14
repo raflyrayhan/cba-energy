@@ -3,10 +3,53 @@
 /* 1) Base & fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap");
 
+
+
 #about-page {
   background: #fafafa;
   font-family: "Poppins", sans-serif;
   color: #333;
+}
+
+.about-hero {
+  background: url("../../public/img/header-image-product.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 10rem 4rem;
+  clip-path: polygon(0 0,100% 0,100% 70%,0 100%);
+}
+/* dark overlay */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;                       /* shorthand for top/right/bottom/left: 0 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.2));   /* tweak the alpha for more/less darkness */
+  z-index: 1;
+}
+
+/* make sure your text sits above the overlay */
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.quality-card {
+  background: #fffefd00;
+  margin: 3rem auto;
+  max-width: 90vw;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: -.5rem -.8rem .0rem rgba(0,0,0,1);
+  text-align: center;
+}
+.quality-card h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FF9800;
+}
+.quality-card img {
+  margin-top: 1.5rem;
+  max-width: 200px;
 }
 
 /* 2) Section headers */
@@ -15,13 +58,14 @@
   color: #000000;                    /* orangish text */
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 2.2rem;                 /* enlarged font */
+  font-size: 3rem;                 /* enlarged font */
   margin: 0 auto 0.5rem;          /* tighter top/bottom spacing */
   padding: 0.5rem 1rem;              /* reduced padding for a “snugger” look */
   border-radius: 0;
   box-shadow: 0 1px 4px rgba(0,0,0,0.03);
   max-width: 100vw;
   text-align: center;
+  font-weight: 500;
 }
 
 /* 3) Lists */
@@ -34,13 +78,14 @@
 .about-list li {
   line-height: 1.6;
   margin-bottom: 0.75rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  text-align: left;
 }
 
 /* 4) ISO image */
 .about-list > div {
   margin: 2rem 0;
-  text-align: center;
+  text-align: left;
 }
 .about-list > div img {
   max-width: 200px;
@@ -58,6 +103,49 @@
   margin: 2rem auto;
   padding: 0 2vw;
 }
+
+.core-card {
+  background: #ffffff00;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  transition: transform 0.2s ease;
+}
+
+.core-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.core-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Ensure images and text flex nicely */
+.core-text {
+  flex: 1;
+  font-size: 1.25rem;
+  color: #333;
+}
+.core-img img {
+  flex: 1;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .core-card {
+    flex-direction: column !important;
+  }
+  .core-img img {
+    max-width: 100%;
+  }
+}
 /* .about-div1 removed: empty ruleset */
 .about-div2 {
   /* image block */
@@ -72,12 +160,16 @@
 
 /* 6) Unique profile */
 .about-para {
-  font-size: 1.4rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
   max-width: 95vw;
   margin: 1rem auto 2rem;
   padding: 0 2vw;
   line-height: 1.7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
 }
 
 /* 7) Subsections (Key Differentiators) */
@@ -96,7 +188,7 @@
   border-radius: 4px;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -104,6 +196,7 @@
   margin-top: 0.5rem;
   line-height: 1.6;
   color: #444;
+  font-size: 2rem;
 }
 
 /* 8) Strategy list */

@@ -129,18 +129,18 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 4px;
+  padding: .5rem;
   transition: all 1s;
 }
 #menu.navbar-default {
-  background: rgba(156, 81, 1, 0.767);
+  background: rgba(215, 118, 15, 0.82);
   backdrop-filter: blur(5px);
   border-color: rgba(0, 0, 0, 0.594);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
   font-family: "Raleway", sans-serif;
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
@@ -150,19 +150,19 @@ hr {
   text-transform: uppercase;
   color: #fbfbff;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.18rem;
   font-weight: 700;
-  padding: 8px 2px;
+  padding: 1rem .4rem;
   border-radius: 0;
-  margin: 9px 9px 0;
+  margin: .8rem .8rem 0;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: .5rem;
   width: 0;
-  height: 2px;
+  height: .3rem;
   background: linear-gradient(to right, #fcfcfc 0%, #ffffff 100%);
   content: "";
   transition: width 0.2s;

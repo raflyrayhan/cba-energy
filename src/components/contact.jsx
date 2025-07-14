@@ -65,18 +65,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-md-3" style={{marginRight: "30px"}}>
-            <h3 style={{ marginBottom: "20px" }}>Contact Us</h3>
-            <p style={{ marginBottom: "10px" }}>P: +6221 576 1725 (hunting)</p>
-            <p style={{ marginBottom: "10px" }}>F: +6221 576 2581</p>
-            <p style={{ marginBottom: "10px" }}>sales@cba-energy.com</p>
-          </div>
-          <div className="col-md-1">
-            <img 
-              src="img/CBA_logo.png" 
+          <div className="col-md-3" style={{marginRight: "2rem"}}>
+             <img 
+              src="img/CBA_logo_fonted.png" 
               alt="CBA Logo" 
-              style={{ maxWidth: "230%", marginTop: "30px", marginLeft: "-60px" }} 
+              style={{ maxWidth: "45%", padding: "0 0", margin: "0 0"}} 
             />
+            <h3 style={{ marginBottom: "1rem" }}>Contact Us</h3>
+            <p style={{ marginBottom: "1rem" }}>P: +6221 576 1725 (hunting)</p>
+            <p style={{ marginBottom: "1rem" }}>F: +6221 576 2581</p>
+            <p style={{ marginBottom: "1rem" }}>Whatsapp: +62811 1013 5360</p>
+            <p style={{ marginBottom: "1rem" }}>E-mail: sales@cba-energy.com</p>
           </div>
         </div>
       </div>
