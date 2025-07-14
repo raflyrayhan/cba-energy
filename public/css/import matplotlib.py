@@ -18,7 +18,7 @@ rect = Rectangle((1, 0), 2, 5, fill=False)
 ax.add_patch(rect)
 
 # Adjust axes
-ax.invert_yaxis()  # Optional: to have row 0 at the top
+ax.invert_yaxis()
 ax.set_aspect('equal')
 ax.set_xlim(0, cols)
 ax.set_ylim(0, rows)
