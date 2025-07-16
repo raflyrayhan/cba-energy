@@ -1,39 +1,56 @@
-/* src/components/AboutPreview.css */
-#about-preview .about-bg {
-  position: relative;
-  height: 90vh;
-  background: url("../../public/img/marine-img.jpg") center/cover no-repeat;
-}
-#about-preview .about-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.4));
+#about-preview {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #fff;
 }
-.about-content {
+
+.about-image {
+  flex: 1;
+  min-height: 90vh;
+  background: linear-gradient(to right, rgba(255,255,255,0.0) 50%, rgba(255,255,255,1) 100%),
+              url('../../public/img/marine-img.jpg') center/cover no-repeat;
+}
+
+.about-text {
+  flex: 1;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #222;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fa8201;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.about-line {
+  font-size: 1.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #333;
   text-align: justify;
-  padding: 8vh 8vh;
-  max-width: 600px;
-  color: white;
 }
-.about-content h2 {
-  font-size: 2.5rem;
-  color: #ffca49;
-  margin-bottom: 1rem;
-}
-.about-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
+
 .btn-custom {
+  margin-top: 2rem;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #ff9800;
-  color: white;
-  border-radius: 4px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #ff9f00;
+  color: #000;
   text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #e88f00;
 }

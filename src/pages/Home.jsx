@@ -2,16 +2,16 @@
 import React from "react";
 import Header from "../components/header";
 import AboutPreview from "../components/aboutpreview";
-import ServicePreview from "../components/servicepreview";
 import Contact from "../components/contact";
 import JsonData from "../data/data.json"
+import ProductPreview from "../components/productpreview";
 
 export default function Home({contactData}) {
   return (
     <>
       <Header data={JsonData.header} />
       <AboutPreview data={JsonData.about} />
-      <ServicePreview data={JsonData.services} />
+      <ProductPreview />
       <Contact data={contactData} />
     </>
   );

@@ -1,15 +1,22 @@
-body,
-html {
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", sans-serif;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  color: #777;
   font-weight: 400;
-  width: 100% !important;
-  height: 100% !important;
+  color: #777;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  scroll-behavior: smooth;
+  /* Optional scrollbar hiding */
   scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;   /* IE 10+ */
-  background: transparent;     /* Chrome, Safari, Edge */
+  -ms-overflow-style: none;    /* IE 10+ */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
 }
 
 h2,
@@ -133,7 +140,7 @@ hr {
   transition: all 1s;
 }
 #menu.navbar-default {
-  background: rgba(215, 118, 15, 0.82);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(5px);
   border-color: rgba(0, 0, 0, 0.594);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
@@ -148,7 +155,7 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #fbfbff;
+  color: #fa9200;
   font-weight: 600;
   font-size: 1.18rem;
   font-weight: 700;
@@ -199,6 +206,84 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #ff7a05;
 }
+
+#menu.transparent {
+  color: #fff !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+  backdrop-filter: none !important;
+}
+
+/* When scrolled, use the existing solid style */
+#menu.scrolled {
+  background: rgb(255, 255, 255) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+}
+
+#menu.transparent .navbar-nav > li > a {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Text color saat scroll (solid background) */
+#menu.scrolled .navbar-nav > li > a {
+  color: #fa9200 !important;
+}
+
+#menu.transparent .navbar-brand img {
+  filter: brightness(100); /* untuk logo putih */
+}
+#menu.scrolled .navbar-brand img {
+  filter: none; /* normal */
+}
+
+.navbar-nav > .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.navbar-nav > li.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-nav > li.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  padding: 0;
+  margin: 0;
+  top: 100%;          /* Tambahkan agar muncul tepat di bawah */
+  left: 0;
+  position: absolute; /* pastikan posisinya absolute dari li */
+  z-index: 999;
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  font-size: 1rem;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+  color: #fa9200;
+}
+
 .section-title {
   margin-bottom: 70px;
 }
@@ -267,18 +352,7 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
-.intro {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  max-height: 800px;
-  padding: 10vw auto;
-  margin-bottom: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e500;
-  background-size: cover;
-  overflow: hidden;
-}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -305,72 +379,6 @@ a:focus,
   align-items: left;
   justify-content: center;
   flex-direction: column;
-}
-
-
-.header-img{
-  max-width: 60%;
-  max-height: 60%;
-  margin-left: -40px;
-  margin-top: 120px;
-  border-radius: 10px;
-  box-shadow: #311800;
-  animation: easeIn 1s ease-in both;
-}
-@keyframes easeIn{
-  from {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.intro .overlay {
-   background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
-}
-
-
-.img-overlay-service{
-   background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.3));
-  border: none;
-  position: relative;
-}
-.intro h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #fff;
-  font-size: 50px;
-  font-weight: 510;
-  text-transform: uppercase;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: 3vw 4vw;
-}
-.intro h1 span {
-  
-  font-weight: 800;
-  color: #3949ab;
-}
-.intro h2{
-  font-size: 6.8rem;
-  margin-bottom: 3vw;
-  margin-top: 3vw;
-  margin: 3vw 4vw;
-}
-.intro p {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 40px;
-  margin: 0 4vw;
-  margin-bottom: auto;
-}
-header .intro-text {
-  padding: auto 8vw;
-  text-align: left;
-  margin: auto 5vh;
-  animation: fadeIn 1s ease-in both;
 }
 
 #about-preview{
